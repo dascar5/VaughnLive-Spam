@@ -4,6 +4,7 @@ import time
 
 options = webdriver.ChromeOptions()
 options.add_argument('--disable-blink-features=AutomationControlled')
+options.add_argument("--mute-audio")
 browser = webdriver.Chrome(options=options, executable_path=r'chromedriver.exe')
 
 page = 'url of the stream you want to spam'
